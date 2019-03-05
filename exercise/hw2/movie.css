@@ -1,0 +1,101 @@
+body {
+	background-image: url("images/moviebg.png");
+}
+h1 {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	text-shadow: #999999 3px 3px;	
+	font-family: Georgia, Times New Roman;
+}
+#banner {
+	background-image: url("images/rancidbannerbg.png");
+    background-repeat: repeat-x;
+    text-align: center;
+    height: 50px;
+}
+#all{  
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 5px 5px gray;
+    overflow: hidden;
+    background-color: #A2B964;
+}
+
+#left {
+	float: left;
+	width: 550px;
+	background-color: #EEEEEE; 
+}
+#top {
+	background-image: url("images/rottenlargebg.png");
+    background-repeat: repeat-x;
+    height: 83px;
+    font-size: 48pt;
+    color: red ;
+	font-weight: bold;
+	
+}
+span {
+	position: absolute;
+}
+#commentl{
+	float: left;
+	width: 47%;
+	background-color: #EEEEEE; 
+	margin-left: 8px;
+
+}
+#commentr {
+	float: right;
+	width: 47%;
+	background-color: #EEEEEE; 
+   margin-right: 8px;
+}
+.text {
+	background-color: #FFFFFF; 
+	border: 2px soild #CCCCCC ;
+	border-radius: 20px;
+	padding: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-family: Georgia, Times New Roman;
+}
+.critic {
+	margin-left : 5px;
+    font-size: 10pt;
+    font-family: Georgia, Times New Roman;
+}
+
+p img {
+	margin-right : 5px;
+	float: left;
+}
+q {
+	font-size: 10pt;	
+	font-family: Georgia, Times New Roman;
+}
+#right {
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+}
+dl {
+	margin : 10px;
+	font-size: 10pt;
+	font-family: Georgia, Times New Roman;
+}
+dt {
+	font-weight: bold;
+    margin-top: 10px;
+}
+ul {
+	list-style-type:none;
+	padding: 0px;
+}
+#foot {
+   text-align: center;
+   clear: right;
+}

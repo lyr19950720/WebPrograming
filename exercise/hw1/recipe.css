@@ -1,0 +1,44 @@
+h1{ 
+	font-family:  Lucida Sans Unicode;
+	font-size: 22pt;
+	font-weight: bold;
+	color: #A4A400;
+	text-align: center;
+	background-color: #EEEEEE;
+	text-decoration: underline;
+ }
+ body {
+ 	font-family: Georgia;
+ 	padding-left: 50pt;
+ 	padding-right: 50pt;
+ 	font-size: 12pt;
+ }
+ h2 {
+ 	font-family:  Lucida Sans Unicode;
+	font-size: 18pt;
+	color: #A4A400;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #EEEEEE;
+}
+blockquote{ 
+	background-color:  #FFFFA8;
+	font-style: italic;
+	text-align: left;
+ }
+ul {list-style-type: none}
+ol ul {list-style-type: square;}
+li a {
+	font-family: Georgia;
+	text-align: left;
+	background: none;
+	text-decoration-line: none;
+	color: #A4A400;
+}
+div p {
+    font-size: 10pt;
+    color: white;
+    background-color: #BFBF56;
+	text-align: right;
+}
