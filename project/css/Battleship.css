@@ -1,0 +1,431 @@
+
+#game_field{
+	width:100%;
+	margin: auto;
+}
+.logo{
+	display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    margin-left: 10%;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1;
+}
+#group_id {
+	display: none;
+}
+#up{
+	width: 80%;
+/*     left: 0;
+top: 0; */
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    margin-bottom: 20px;
+
+}
+.tip{
+	/*background: #f8f8f8;*/
+	margin: auto;
+    padding: .5em;
+    /*overflow: hidden;*/
+    position: relative;
+}
+#tip_message{
+	display: inline-block;
+	background-color: #f8f8f8;
+	margin-top: 20px;
+	margin-left: 30%;
+	margin-right: 10%;
+	height:40px;
+	position: relative;
+	text-align: center;
+	line-height: 40px;
+    z-index: 0;
+    width:40%;
+    float: left;
+}
+.sign_up-form,.sign_in-form {
+	display:none;
+	
+}
+
+.form label {
+	 width:100px;
+    float:left;
+    /*font-size:12px;*/
+   	font-size:15px;
+    line-height:24px;
+    font-weight:bold;
+    /*color: #00f;*/
+
+}
+.form{
+	width:350px;
+	margin-top:5%;
+    margin-bottom:5px;
+    height: 200px;
+    line-height:18px;
+    padding:5px 10px;
+    /* border-radius: 5px; */
+    border: 1px solid #d6d6ff;
+    margin-left:38%;
+    display:none;
+    font-weight: bold;
+    font-family:  inherit;
+    color: #4c4d51;
+
+}
+.form_tip  {
+	text-align:center;
+	margin-bottom:10%;
+	/*color:#00f;*/
+}
+
+.form input {
+	width:200px;
+    margin-bottom:5px;
+    line-height:18px;
+    padding:5px 10px;
+    border-radius: 5px; 
+    /*border:1px solid #CCC;*/
+    border: 1px solid #d6d6ff;
+}
+.button {
+
+	margin-top:10%;
+	margin-left:25%;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #4c4d51;
+
+}
+#sign-up,#sign-in, #log-out{
+	display: inline;
+	margin-top:10px; 
+	margin-left: 10px;
+	border: 1px solid #d6d6ff;
+    background: #d5efd6;
+    background: linear-gradient(to bottom,rgba(225,250,225,1) 0,rgba(195,222,197,1) 100%);
+    /*margin: 1em 1.8em 0;*/
+    padding: .6em .9em;
+    font-size: 13pt;
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    line-height: 1;
+    font-family: inherit;
+    cursor: pointer !important;
+    outline: 0;
+    float: right;
+    /*position: relative;*/
+    
+
+}
+#log-out{
+	display: none;
+}
+
+#Quit {
+	display: inline-block;
+	margin-top:30px; 
+	visibility: hidden;
+	/*float: right;*/
+
+}
+#Quit a {
+	color: red;
+}
+/*#login_out a {
+	color: red;
+}*/
+.field-Start_disabled {
+    cursor: default !important;
+    top: 0;
+    opacity: .5;
+    pointer-events: none;
+}
+#field {
+	width:60%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+#self_battlefield{
+	float: left;
+}
+.placeships li{
+    font-size: .8em;
+    position: relative;
+    bottom: -2em;
+    left: 0;
+    margin-right: -22px;
+    margin:2em;
+
+}
+#rival_battlefield{
+	float: right;
+	visibility:visible;
+}
+table{
+	border-collapse: collapse;
+	z-index: 1;
+}
+table td {
+	position: relative;
+	padding: 0;
+}
+
+#tab1 td.free_cell,.busy_cell,#tab3 td.free_cell,.busy_cell{
+	border:1px solid #b4b4ff;
+	height: 2em;
+}
+
+#tab2 td.free_cell{
+	border:1px solid #b4b4ff;
+
+}
+#tab2{
+	opacity: 0.5;
+}
+#tab3{
+	display:none;
+}
+.busy_ship {
+   
+	width: 2em;
+	height: 2em;
+	
+	/*z-index: 2;*/
+}
+.order {
+	text-align: center;
+}
+#tab1 .ship,#tab3 .ship {
+	border:3px solid #00f;
+	/*background-color: rgba(0,0,255,.05);*/
+	z-index: 2;
+	height: 2em;
+	left:0px;
+	top:0px;
+	margin: -2px;
+	position: absolute;
+	cursor: move;
+
+}
+#tab2 .ship{
+	border:3px solid #36e868;
+	/*background-color: rgba(0,0,255,.05);*/
+	z-index: 2;
+	height: 2em;
+	left:0px;
+	top:0px;
+	width: 2em;
+	margin: -2px;
+	position: absolute;
+    visibility: hidden;
+    
+
+}
+
+.battle_lable{
+	font-size: 1em;
+    position: relative;
+	text-align: center;*/
+    bottom: -10px;
+    margin:10px;
+}
+.rival{
+	color: #cac4c4;
+	font-style: italic;
+}
+
+span.before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: red;
+	transform: rotate(-45deg);
+	top: 50%;
+	height: 2px;
+	left: -25%;
+	width: 150%;
+	margin-left: -1px;
+	visibility: visible;
+
+}
+span.after{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	background: red;
+	transform: rotate(45deg);
+	top: 50%;
+	height: 2px;
+	left: -25%;
+	width: 150%;
+	margin-left: -1px;
+	visibility: visible;
+
+}
+span.dot{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    background: #333;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+
+.battlefield-start{
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	visibility:visible;
+	/*z-index: 2;*/
+}
+.gap{
+	text-align: left;
+    padding: 0 1em;
+    margin-right: 4px;
+    position: relative;
+}
+.choose_rival{
+	font-size: .8em;
+    font-family: Arial, sans-serif;
+	margin-top: -40px;
+	position: relative;
+}
+.choose_rival-lable{
+	font-size: 1.5em;
+	margin-left: 1.8em;
+	margin-bottom: .5em;
+
+
+}
+.choose_rival-variants{
+	display: inline;
+	margin-left: -.32em;
+	margin-right: .25em;
+}
+.variants-link{
+	
+	background: #eee;
+	text-decoration: none;
+	color: #000;
+	cursor: text !important;
+	padding: .12em .32em;
+}
+.variant-link_disactive{
+	background:#fff;
+	text-decoration: underline;
+	color: #0034ab;
+
+}
+.variant-link_active{
+	background: #eee;
+    text-decoration: none;
+    color: #000;
+    /*cursor: text !important;*/
+}
+.choose_rival-variants li div div {
+	margin-top:2em;
+	margin-left:3em;
+	color: #0034ab;
+
+}
+.choose_rival-variants li div input {
+	margin-top:2em;
+	margin-left:3em;
+	font-size: 100%;
+	width: 22em;
+}
+.placeships a {
+	text-decoration: none;
+
+	color: #0034ab;
+}
+.placeships li {
+	border-bottom:1px dashed #111;
+	
+}
+ul {
+	list-style-type: none;
+}
+li{
+	display: inline;
+    color: #0034ab;	
+	cursor:pointer;
+}
+#Start{
+	
+    border: 1px solid #d6d6d6;
+    background: #d5efd6;
+    background: linear-gradient(to bottom,rgba(225,250,225,1) 0,rgba(195,222,197,1) 100%);
+    margin: 1em 1.8em 0;
+    padding: .2em .8em;
+    font-size: 1.32em;
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    line-height: 1;
+    font-family: inherit;
+    cursor: pointer !important;
+    outline: 0;
+    display: inline-block;
+    float: left;
+
+
+}
+
+.port {
+    width: 300px;
+    /*height: 550px;*/
+    position: absolute !important;
+    display: none;
+    margin-top :50px;
+   
+
+    
+}
+
+.port-instruction {
+    font-size: .8em;
+    margin-bottom: 2em;
+    line-height: 1.4;
+}
+.port-lines {
+    position: relative;
+    top: -1.26em;
+    left: -.7em;
+    margin-left: 1px;
+}
+.port-line {
+    position: relative;
+    height: 2em;
+    margin: 0;
+}
+.port-ship {
+    position: relative;
+    margin: 1.26em .7em;
+    float: left;
+    height: 2em;
+    border: 1px dotted #b2b2b9;
+}
+.port-ship .ship {
+    z-index: 2;
+    left: 0;
+    top: 0;
+    height: 2em;
+    border: 3px solid #00f;
+    background: rgba(0,0,255,.05);
+    position: relative;
+    margin: -2px;
+    cursor: move;
+}
+
+
+
